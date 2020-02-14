@@ -104,5 +104,4 @@ def main():
     if f == 8:
         lev(n, size)
     
-if __main__=='__main__':
-    main()
+main()

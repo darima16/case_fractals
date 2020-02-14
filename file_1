@@ -1,0 +1,57 @@
+from turtle import *
+
+def kocha(n, size):
+    if n == 0:
+        forward(n)
+    else:
+        kocha(n-1, size/3)
+        left(60)
+        kocha(n-1, size/3)
+        right(120)
+        kocha(n-1, size/3)
+        left(60)
+        kocha(n-1, size/3)
+
+
+def snowflake_kocha(n, size):
+    if n == 0:
+        kocha(n,size)
+        right(120)
+        kocha(n, size)
+        right(120)
+        kocha(n, size)
+    else:
+        kocha(n, size)
+        right(120)
+        kocha(n, size)
+        right(120)
+        kocha(n, size)
+
+def lev(n, size):
+    if n == 0:
+        forward(size)
+    else:
+        left(45)
+        lev(n-1, size)
+        right(90)
+        lev(n-1, size)
+        left(45)
+
+def mink(n, size):
+    if n == 0:
+        forward(size)
+    else:
+        mink(n-1, size/3)
+        left(90)
+        mink(n-1, size/3)
+        right(90)
+        mink(n-1, size/3)
+        right(90)
+        mink(n-1, size/3)
+        mink(n-1, size/3)
+        left(90)
+        mink(n-1, size/3)
+        left(90)
+        mink(n-1, size/3)
+        right(90)
+        mink(n-1, size/3)

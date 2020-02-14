@@ -1,3 +1,8 @@
+"""Case-study#1 Fractals
+Developers:
+Rashidova A. (100%), Zhambaeva D. (100%), Ganbat S. (100%)
+"""
+
 from turtle import *
 from rulocal import FRACTALS, SIZE, N
 
